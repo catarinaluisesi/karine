@@ -46,7 +46,7 @@ function showDate() {
     const dateParagraph = document.createElement('p');
     dateParagraph.textContent = 'Encontro: 10/05/2024';
     dateElement.appendChild(dateParagraph);
-    document.querySelector('.container').appendChild(dateElement);
+    document.querySelector('.content2').appendChild(dateElement); // Adiciona à div .content2
 }
 // Declaração/Ativação das funções.
 buttonNo.addEventListener('mouseover', runButtonY);
