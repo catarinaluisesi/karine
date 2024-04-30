@@ -1,34 +1,39 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: "Poppins", sans-serif;
     background: linear-gradient(180deg, rgba(255,0,31,1) 44%, rgba(255,0,112,1) 60%);
+    overflow-x: hidden; /* Evita a barra de rolagem horizontal no celular */
 }
 
-.container{
-    width: 100vw;
-    height: 100vh;
+.container {
+    width: 100%;
+    padding: 20px;
+}
+
+.title1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title1 h1 {
+    color: #FFF;
+}
+
+.content1 {
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center;
-    position: relative; /* Adicionei para melhor controle do posicionamento */
+    margin-bottom: 20px;
 }
 
-.content1{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 300px;
-    height: 100px;
-}
-
-.content1 .no{
+.content1 button {
     height: 50px;
     width: 75px;
     border-radius: 8px;
@@ -36,86 +41,53 @@ body{
     background-color: red;
     color: #FFF;
     font-size: 18px;
-    font-weight: bolder;
-}
-
-.content1 .yes{    
-    height: 50px;
-    width: 75px;
-    border-radius: 8px;
-    border: 2px solid #FFF;
-    background-color: red;
-    color: #FFF;
-    font-size: 18px;
-    font-weight: bolder;
+    font-weight: bold;
     cursor: pointer;
-    transition: ease .5s;
-}   
+    margin: 0 10px;
+}
 
-.yes:hover{
+.yes:hover {
     background-color: rgb(249, 84, 84);
 }
 
-span{
-    font-weight: bolder;
+.content1 span {
+    color: #FFF;
     font-size: 18px;
-    color:#FFF;
+    font-weight: bold;
 }
 
-.title1{
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top:3%;
-    width: 100%;
+.content2 {
+    text-align: center;
+}
+
+.content2 img {
+    height: auto;
+    max-width: 100%;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
     color: #FFF;
 }
 
-.title1 h1{
-    color: #FFF;
-}
-
-.content2{
-    display: none;
-}
-
-.content2 img{
-    height: 300px;
-    width: 320px;
-}
-
-footer{
-    position: absolute;
-    bottom: 5%;
-    font-size: 13px;
-    color:#FFF;
-}
-
-footer a{
+footer a {
     text-decoration: none;
     font-weight: bold;
-    color:#FFF;
+    color: #FFF;
 }
 
-footer i{
-    color: rgb(30, 0, 139);
-}
-
-/* Adicione este estilo para posicionar a data no canto inferior */
 .date {
-    position: absolute;
-    bottom: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 20px;
+    left: 0;
     width: 100%;
-    text-align: left;
 }
 
 .date p {
-    font-size: 13px;
-    font-weight: absolute;
-    color: #FFF;
+    font-size: 18px;
+    font-weight: bold;
+    color: #4caf50;
     margin-bottom: 5px;
 }
-
-
